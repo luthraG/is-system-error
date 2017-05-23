@@ -17,7 +17,27 @@ var Constants = {
         'EBADE'             : true,
         'EBADF'             : true,
         'EBADFD'            : true,
-        'EBADMSG'           : true
+        'EBADMSG'           : true,
+        'EBADR'             : true,
+        'EBADRQC'           : true,
+        'EBADSLT'           : true,
+        'EBUSY'             : true,
+        'ECANCELED'         : true,
+        'ECHILD'            : true,
+        'ECHRNG'            : true,
+        'ECOMM'             : true,
+        'ECONNABORTED'      : true,
+        'ECONNREFUSED'      : true,
+        'ECONNRESET'        : true,
+        'EDEADLK'           : true,
+        'EDEADLOCK'         : true,
+        'EDESTADDRREQ'      : true,
+        'EDOM'              : true,
+        'EDQUOT'            : true,
+        'EEXIST'            : true,
+        'EFAULT'            : true,
+        'EFBIG'             : true,
+        'EHOSTDOWN'         : true
     }
 };
 
