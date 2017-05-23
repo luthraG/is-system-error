@@ -57,7 +57,27 @@ var Constants = {
         'EL3RST'            : true,
         'ELIBACC'           : true,
         'ELIBBAD'           : true,
-        'ELIBMAX'           : true
+        'ELIBMAX'           : true,
+        'ELIBSCN'           : true,
+        'ELIBEXEC'          : true,
+        'ELOOP'             : true,
+        'EMEDIUMTYPE'       : true,
+        'EMFILE'            : true,
+        'EMLINK'            : true,
+        'EMSGSIZE'          : true,
+        'EMULTIHOP'         : true,
+        'ENAMETOOLONG'      : true,
+        'ENETDOWN'          : true,
+        'ENETRESET'         : true,
+        'ENETUNREACH'       : true,
+        'ENFILE'            : true,
+        'ENOBUFS'           : true,
+        'ENODATA'           : true,
+        'ENODEV'            : true,
+        'ENOENT'            : true,
+        'ENOEXEC'           : true,
+        'ENOKEY'            : true,
+        'ENOLCK'            : true
     }
 };
 

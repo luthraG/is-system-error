@@ -40,7 +40,7 @@ describe('isSystemError API Tests', function () {
             expect(isSystemError(error)).to.be.true;
         });
 
-         error.code = 'EHOSTUNREACH'
+        error.code = 'EHOSTUNREACH'
         it('Error with code EHOSTUNREACH is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
@@ -57,6 +57,26 @@ describe('isSystemError API Tests', function () {
 
         error.code = 'ELIBMAX'
         it('Error with code ELIBMAX is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'EMFILE'
+        it('Error with code EMFILE is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ENFILE'
+        it('Error with code ENFILE is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+         error.code = 'ENOENT'
+        it('Error with code ENOENT is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ENOLCK'
+        it('Error with code ENOLCK is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
     });
