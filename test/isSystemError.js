@@ -50,7 +50,7 @@ describe('isSystemError API Tests', function () {
             expect(isSystemError(error)).to.be.true;
         });
 
-         error.code = 'ELIBBAD'
+        error.code = 'ELIBBAD'
         it('Error with code ELIBBAD is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
@@ -70,13 +70,33 @@ describe('isSystemError API Tests', function () {
             expect(isSystemError(error)).to.be.true;
         });
 
-         error.code = 'ENOENT'
+        error.code = 'ENOENT'
         it('Error with code ENOENT is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
 
         error.code = 'ENOLCK'
         it('Error with code ENOLCK is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ENOMEDIUM'
+        it('Error with code ENOMEDIUM is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ENOTDIR'
+        it('Error with code ENOTDIR is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ENOTUNIQ'
+        it('Error with code ENOTUNIQ is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ENOSTR'
+        it('Error with code ENOSTR is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
     });

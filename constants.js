@@ -77,7 +77,27 @@ var Constants = {
         'ENOENT'            : true,
         'ENOEXEC'           : true,
         'ENOKEY'            : true,
-        'ENOLCK'            : true
+        'ENOLCK'            : true,
+        'ENOLINK'           : true,
+        'ENOMEDIUM'         : true,
+        'ENOMEM'            : true,
+        'ENOMSG'            : true,
+        'ENONET'            : true,
+        'ENOPKG'            : true,
+        'ENOPROTOOPT'       : true,
+        'ENOSPC'            : true,
+        'ENOSR'             : true,
+        'ENOSTR'            : true,
+        'ENOSYS'            : true,
+        'ENOTBLK'           : true,
+        'ENOTCONN'          : true,
+        'ENOTDIR'           : true,
+        'ENOTEMPTY'         : true,
+        'ENOTSOCK'          : true,
+        'ENOTSUP'           : true,
+        'ENOTTY'            : true,
+        'ENOTUNIQ'          : true,
+        'ENXIO'             : true
     }
 };
 
