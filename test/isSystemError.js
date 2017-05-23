@@ -4,9 +4,9 @@ var isSystemError   = require('../index.js').isSystemError,
 describe('isSystemError API Tests', function () {
     describe('Valid tests for isSystemError API', function () {
         var error = new Error();
-        error.code = 'ENOENT';
+        error.code = 'EACCES';
 
-        it('Error with code ENOENT is a valid system error', function () {
+        it('Error with code EACCES is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
 
@@ -15,18 +15,28 @@ describe('isSystemError API Tests', function () {
             expect(isSystemError(error)).to.be.true;
         });
 
-        error.code = 'EMFILE';
-        it('Error with code EMFILE is a valid system error', function () {
+        error.code = 'EBADRQC';
+        it('Error with code EBADRQC is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
 
-        error.code = 'ECONNRESET'
-        it('Error with code ECONNRESET is a valid system error', function () {
+        error.code = 'ECONNREFUSED'
+        it('Error with code ECONNREFUSED is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
 
-        error.code = 'EMLINK'
-        it('Error with code EMLINK is a valid system error', function () {
+        error.code = 'EDEADLOCK'
+        it('Error with code EDEADLOCK is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+         error.code = 'EEXIST'
+        it('Error with code EEXIST is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'EDESTADDRREQ'
+        it('Error with code EDESTADDRREQ is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
     });
