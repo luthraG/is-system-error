@@ -37,7 +37,27 @@ var Constants = {
         'EEXIST'            : true,
         'EFAULT'            : true,
         'EFBIG'             : true,
-        'EHOSTDOWN'         : true
+        'EHOSTDOWN'         : true,
+        'EHOSTUNREACH'      : true,
+        'EIDRM'             : true,
+        'EILSEQ'            : true,
+        'EINPROGRESS'       : true,
+        'EINTR'             : true,
+        'EINVAL'            : true,
+        'EIO'               : true,
+        'EISCONN'           : true,
+        'EISDIR'            : true,
+        'EISNAM'            : true,
+        'EKEYEXPIRED'       : true,
+        'EKEYREJECTED'      : true,
+        'EKEYREVOKED'       : true,
+        'EL2HLT'            : true,
+        'EL2NSYNC'          : true,
+        'EL3HLT'            : true,
+        'EL3RST'            : true,
+        'ELIBACC'           : true,
+        'ELIBBAD'           : true,
+        'ELIBMAX'           : true
     }
 };
 

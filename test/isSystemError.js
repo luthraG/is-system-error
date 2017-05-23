@@ -39,6 +39,26 @@ describe('isSystemError API Tests', function () {
         it('Error with code EDESTADDRREQ is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
+
+         error.code = 'EHOSTUNREACH'
+        it('Error with code EHOSTUNREACH is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'EISDIR'
+        it('Error with code EISDIR is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+         error.code = 'ELIBBAD'
+        it('Error with code ELIBBAD is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ELIBMAX'
+        it('Error with code ELIBMAX is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
     });
 
     describe('Invalid tests for isSystemError API', function () {
