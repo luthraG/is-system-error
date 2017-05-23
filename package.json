@@ -1,0 +1,37 @@
+{
+    "name"              : "is-system-error",
+    "version"           : "1.0.0",
+    "description"       : "A validator to check if the error is one of the system errors encountered when writing a Node.js program",
+    "main"              : "./index.js",
+    "keywords"          : [
+        "error",
+        "is error",
+        "is system error",
+        "is-system-error",
+        "system error",
+        "system-error",
+        "exception"
+    ],
+    "dependencies"      : {
+        "node-ratify"   : "~1.1.2"
+    },
+    "devDependencies"   : {
+        "chai"          : "^3.5.0",
+        "mocha"         : "^3.4.1"
+    },
+    "repository"        : {
+        "type" : "git",
+        "url"  : "https://github.com/luthraG/is-system-error.git"
+    },
+    "bugs"              : {
+        "url"   : "https://github.com/luthraG/is-system-error/issues"
+    },
+    "scripts"           : {
+        "test"          : "mocha --reporter spec ./test/isSystemError.js"
+    },
+    "author"            : {
+        "name"  : "Gaurav Luthra",
+        "email" : "luthra.zenith@gmail.com"
+    },
+    "license"           : "MIT"
+}
