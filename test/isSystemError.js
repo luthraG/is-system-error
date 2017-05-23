@@ -129,6 +129,26 @@ describe('isSystemError API Tests', function () {
         it('Error with code EREMOTE is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
+
+        error.code = 'EUSERS'
+        it('Error with code EUSERS is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ETIMEDOUT'
+        it('Error with code ETIMEDOUT is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'EXDEV'
+        it('Error with code EXDEV is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ETIME'
+        it('Error with code ETIME is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
     });
 
     describe('Invalid tests for isSystemError API', function () {

@@ -117,7 +117,16 @@ var Constants = {
         'ESOCKTNOSUPPORT'   : true,
         'ESRCH'             : true,
         'ESTALE'            : true,
-        'ESTRPIPE'          : true
+        'ESTRPIPE'          : true,
+        'ETIME'             : true,
+        'ETIMEDOUT'         : true,
+        'ETXTBSY'           : true,
+        'EUCLEAN'           : true,
+        'EUNATCH'           : true,
+        'EUSERS'            : true,
+        'EWOULDBLOCK'       : true,
+        'EXDEV'             : true,
+        'EXFULL'            : true
     }
 };
 

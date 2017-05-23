@@ -1,4 +1,7 @@
 # is-system-error
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+
 Checks if the error is one of the system errors encountered when writing a Node.js program
 
 ### Server-side usage
@@ -83,3 +86,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+[npm-url]: https://www.npmjs.com/package/is-system-error
+[npm-image]: https://img.shields.io/npm/v/is-system-error.svg
+
+[npm]: https://www.npmjs.com/
+
+[travis-url]: https://travis-ci.org/luthraG/is-system-error
+[travis-image]: http://img.shields.io/travis/luthraG/is-system-error.svg
