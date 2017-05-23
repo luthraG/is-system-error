@@ -97,7 +97,27 @@ var Constants = {
         'ENOTSUP'           : true,
         'ENOTTY'            : true,
         'ENOTUNIQ'          : true,
-        'ENXIO'             : true
+        'ENXIO'             : true,
+        'EOPNOTSUPP'        : true,
+        'EOVERFLOW'         : true,
+        'EPERM'             : true,
+        'EPFNOSUPPORT'      : true,
+        'EPIPE'             : true,
+        'EPROTO'            : true,
+        'EPROTONOSUPPORT'   : true,
+        'EPROTOTYPE'        : true,
+        'ERANGE'            : true,
+        'EREMCHG'           : true,
+        'EREMOTE'           : true,
+        'EREMOTEIO'         : true,
+        'ERESTART'          : true,
+        'EROFS'             : true,
+        'ESHUTDOWN'         : true,
+        'ESPIPE'            : true,
+        'ESOCKTNOSUPPORT'   : true,
+        'ESRCH'             : true,
+        'ESTALE'            : true,
+        'ESTRPIPE'          : true
     }
 };
 

@@ -99,6 +99,36 @@ describe('isSystemError API Tests', function () {
         it('Error with code ENOSTR is a valid system error', function () {
             expect(isSystemError(error)).to.be.true;
         });
+
+        error.code = 'EPERM'
+        it('Error with code EPERM is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'EPIPE'
+        it('Error with code EPIPE is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ESHUTDOWN'
+        it('Error with code ESHUTDOWN is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ESOCKTNOSUPPORT'
+        it('Error with code ESOCKTNOSUPPORT is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'ERANGE'
+        it('Error with code ERANGE is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
+
+        error.code = 'EREMOTE'
+        it('Error with code EREMOTE is a valid system error', function () {
+            expect(isSystemError(error)).to.be.true;
+        });
     });
 
     describe('Invalid tests for isSystemError API', function () {
